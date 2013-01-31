@@ -24,10 +24,11 @@ public class Saludo extends HttpServlet {
     res.setContentType( "text/html" );
     PrintWriter salida = res.getWriter();
     salida.println( "<HTML><BODY>" );
-    salida.println( "<H2>Saludos,</H2>" );
+    salida.println( "<H2><FONT color=#008000>Bienvenido a la práctica de CV</font></H2>" );
     salida.println( "<H1 ALIGN=\"CENTER\">" +
-      "<FONT COLOR=\"#0000FF\">" + nombre );
+      "<FONT COLOR=\"#0000FF\">Según el formulario anterior te llamas:" + nombre );
     salida.println( "</FONT></H1>" );
+    salida.println( "<H2><FONT color=#008000>Espero que disfrutes y aprendas mucho</FONT></H2>" );
     salida.println( "</HTML></BODY>" );
   }
 
